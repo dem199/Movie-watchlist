@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Movie watchlist</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-info">
+          <h2 class="header-info-main">Find your film</h2>
+          <p class="header-info-sub">
+            <a href="#" onclick="loadStorageContent()">My Watchlist</a>
+          </p>
+        </div>
+
+        <div class="search-container">
+          <img src="image/Search.png" class="fa-regular fa-magnifying-glass" />
+          <input
+            id="input-text"
+            type="text"
+            placeholder="Search"
+            name="search"
+          />
+          <button onclick="findMovie()">Search</button>
+        </div>
+      </div>
+      <main>
+        <div class="blank-details">
+          <img src="image/Icon (2).png" alt="" />
+          <h1>Start exploring</h1>
+        </div>
+        <div id="search-box"></div>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
